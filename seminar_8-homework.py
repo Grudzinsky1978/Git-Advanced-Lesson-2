@@ -92,12 +92,13 @@ def search_contact():
     search = input("Введите данные для поиска: ")
     with open('phonebook.txt', 'r', encoding="utf-8") as file_r:
         list_contacts = file_r.read().rstrip().split("\n\n")
+    print(f'Для строки "{search}" найдены следующие записи:\n')
     for contact_str in list_contacts:
         # print(contact_str)
         contact_lst = contact_str.split()
         # print(contact_lst)
         if search in contact_lst[index_var]:
-            print(contact_str + "\n")
+            print(f'\t{contact_str}\n')
 
 def copy_to_file_contact():
     print_contacts()
