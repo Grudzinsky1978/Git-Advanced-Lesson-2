@@ -56,25 +56,14 @@ def add_contact():
     with open('phonebook.txt', 'a', encoding="utf-8") as file_a:
         file_a.write(contact)
 
-# def print_contacts():
-#     with open('phonebook.txt', 'r', encoding="utf-8") as file_r:
-#         print(file_r.read())
-#         print("---" * 20)
-#         print("Вывод контактов завершён.")
-
 def print_contacts():
-    # with open('phonebook.txt', 'r', encoding="utf-8") as file_r:
-    #     print(file_r.read())
-    #     print("---" * 20)
-    #     print("Вывод контактов завершён.")
     
     with open('phonebook.txt', 'r', encoding="utf-8") as file_r:
         list_contacts = file_r.read().rstrip().split("\n\n")
-    # print(enumerate(list_contacts))
-    # print(list(enumerate(list_contacts, 1)))
+    print(f'Количество записей: {len(list_contacts)}:\n')
     for i, contact in enumerate(list_contacts, 1):
         print(i, contact + "\n")
-    print("----------------------------\n")
+    print("--------End-------\n")
 
 
 def search_contact():
