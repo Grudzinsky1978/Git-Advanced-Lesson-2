@@ -12,6 +12,9 @@ git merge testing_program
 git remote remove origin
 git remote -v
 git remote add origin https://github.com/Grudzinsky1978/Git-Advanced-Lesson-2.git
+git switch -c testing_the_program
+... commiting...
+git push -u origin testing_the_program
 ```
 
 
