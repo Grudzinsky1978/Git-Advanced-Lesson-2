@@ -1,3 +1,22 @@
+# Урок 2. Домашняя работа
+
+```
+git remote -v
+git log --oneline
+git branch
+git switch -c testing_program
+... commiting...
+git checkout master
+git merge testing_program
+... создал другой удалённый репозиторий...
+git remote remove origin
+git remote -v
+git remote add origin https://github.com/Grudzinsky1978/Git-Advanced-Lesson-2.git
+```
+
+
+
+
 # Урок 1. Домашняя работа
 Инициализирован локальный репозиторий
 ```
