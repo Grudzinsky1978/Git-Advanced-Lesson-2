@@ -15,6 +15,28 @@ git remote add origin https://github.com/Grudzinsky1978/Git-Advanced-Lesson-2.gi
 git switch -c testing_the_program
 ... commiting...
 git push -u origin testing_the_program
+git checkout master
+git merge testing_the_program
+git push
+git log --oneline
+git diff 1dea07c 6f91396
+git diff 6f91396 df98383
+git revert df98383
+git revert 6f91396
+git revert 1dea07c
+... последняя команда вызвала конфликт, был разрешён в редакторе конфликтов
+git reset --soft 1dea07c
+git restore --staged README.md
+git restore --staged seminar_8-homework.py
+git branch
+git reset --mixed 6f91396
+git restore --staged README.md
+git restore --staged seminar_8-homework.py
+git restore --staged README.md
+git restore --staged phonebook.txt
+git reset --hard df98383
+git pull
+git push
 ```
 
 
