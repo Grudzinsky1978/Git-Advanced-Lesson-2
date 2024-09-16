@@ -83,11 +83,9 @@ def search_contact():
         list_contacts = file_r.read().rstrip().split("\n\n")
     print(f'Для строки "{search}" найдены следующие записи:\n')
     for contact_str in list_contacts:
-        # print(contact_str)
         contact_lst = contact_str.split()
-        # print(contact_lst)
         if search in contact_lst[index_var]:
-            print(f'\t{contact_str}\n')
+            print(f'{contact_str}\n')
 
 def copy_to_file_contact():
     print_contacts()
